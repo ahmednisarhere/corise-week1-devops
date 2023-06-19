@@ -27,7 +27,7 @@ jobs:
           python -m pip install -r requirements.txt
           
       - name: Run pytest with coverage
-        run: pytest --cov=test_calculator.py tests/
+        run: pytest --cov=test_calculator tests/test_calculator.py
           
       - name: Build coverage file
         run: |
